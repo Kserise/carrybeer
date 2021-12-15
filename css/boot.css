@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+body { background:#ccc; }
+.container { width:500px; margin-top:30px; padding:50px 40px 30px; background:#fff; border-radius:20px; box-shadow:0px 0px 5px #000;}
+.container h2 { margin-bottom:20px; text-align:center; }
+.bs-input { padding-left:0; }
+ul li { list-style:none; margin-bottom:10px; }
+.taste { display:flex; justify-content:space-between; align-items:center; }
+.rangebar { width:75%; padding:0 15px;}
+.idcheck { font-size:14px; }
+.confirmbox { margin-top:30px; }
+
+@media screen and (max-width:767px) {
+ .container { width:90%; }
+}
+.upbtncon { display:flex; justify-content:space-between; align-items:center; }

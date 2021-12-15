@@ -1,0 +1,718 @@
+@charset "utf-8";
+
+/*///// 공통스타일 /////*/
+.btngroup { display:flex; justify-content:space-between; width:80%; height:60px; margin:0 auto;}
+.btngroup .button { width:150px; padding:0 30px; }
+.btngroup .fw { margin-left:auto; }
+.btngroup .bk { margin-right:auto; }
+.red { color:#fc0; }
+span { color:#ffb400;}
+.eng { font-family:constb;  }
+div.empty { width:100%; height:300px; padding-top:50px; background:#ccc; }
+div.empty h2 { text-align:center; }
+.nationcolor { color:#f00; }
+.space { height:100px; margin-top:50px; }
+.space h2 { text-align:center; }
+.beerimg > img { display:block; width:100%; height:100%,}
+.bn h2 {
+    position:absolute; left:50%;
+    font-family:constb; color:#fff; text-transform:capitalize;
+    transform:translateX(-50%); opacity:0.8;
+    transition:opacity 0.4s ease-in;
+}
+.bn h2 a { color:#fff; }
+.bn .blackbn { 
+    width:100%; height:100%; background:rgba(0,0,0,0.65); 
+    transition:background 0.4s ease-in; 
+}
+.bn:hover .blackbn { background:rgba(0,0,0,0.3);}
+.bn:hover h2.eng { opacity:0.1; }
+
+/*
+#maincon2 > li:first-child { 
+    background:url("../imgs/beer/Becks.jpg") no-repeat center; 
+    background-size:cover; 
+}
+#maincon2 > li:nth-child(2) { 
+    background:url("../imgs/beer/Bitburger.png") no-repeat center; 
+    background-size:cover; 
+}
+#maincon2 > li:nth-child(3) { 
+    background:url("../imgs/beer/König\ Pilsener.png") no-repeat center; 
+    background-size:cover; 
+}
+#maincon2 > li:nth-child(4) { 
+    background:url("../imgs/beer/Krombacher.jpg") no-repeat center; 
+    background-size:cover; 
+}
+#maincon2 > li:nth-child(5) { 
+    background:url("../imgs/beer/Veltins.jpg") no-repeat center; 
+    background-size:cover; 
+}
+#maincon2 > li:nth-child(6) { 
+    background:url("../imgs/beer/Warsteiner.jpg") no-repeat center; 
+    background-size:cover; 
+}
+*/
+.nation li:hover a { font-weight:500; color:#f00; }
+
+
+.beername > p { color:#821491; }
+
+
+/*///// search /////*/
+
+.map { position:relative; overflow:hidden; }
+.cover { width:100%; height:100%; transition:all 0.4s ease-in; }
+.map:hover .cover { background:rgba(255,255,255,0.5);}
+
+
+@media screen and (min-width:1450px) {
+
+    .bn { width:100%; height:570px; background:#333; }
+    .bn h2 { top:50%; transform:translate(-50%,-50%); font-size:100px; letter-spacing:-5px; }
+
+
+    .container { height:500px; margin-top:145px; padding:25px 0;}
+    .mainbar1 { 
+        width:100%; height:100%; 
+        background: rgb(130,20,145);
+        background: -moz-linear-gradient(left, rgb(130,20,145) 0%, rgb(130,20,145) 60%, rgb(255,255,255) 61%, rgb(255,255,255) 100%);
+        background: -webkit-linear-gradient(left, rgb(130,20,145) 0%,rgb(130,20,145) 60%,rgb(255,255,255) 61%,rgb(255,255,255) 100%);
+        background: linear-gradient(to right, rgb(130,20,145) 0%,rgb(130,20,145) 60%,rgb(255,255,255) 61%,rgb(255,255,255) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#821491', endColorstr='#ffffff',GradientType=1 );
+    }
+    .mainbar2 { display:flex; width:1400px; height:100%; margin:0 auto; }
+
+    .maincon1 { width:600px; height:100%; padding:140px 30px 0; color: #fff; }
+    .maincon1 h3 { padding-bottom:15px; font-size:50px; }
+    .maincon1 .txt1 { padding-bottom:15px; font-size:28px; }
+    .maincon1 p { width:530px; font-size:18px; }
+
+
+
+    .map { 
+        width:800px; height:800px; margin-top:-170px; 
+        background:url("../imgs/maptb.png") no-repeat center #fff; 
+        border-top-left-radius:50%; border-bottom-left-radius:50%;
+    }
+
+    /*///// search /////*/
+
+    .search-box { 
+        position:absolute; left:50%; top:50%;
+        height:60px; margin-top:-30px; background:#fff; 
+        border:5px solid #a0a0a0; border-radius:60px;
+        transform:translateX(-50%);
+    }
+    .search-txt { 
+        float:left; width:0; padding:0; 
+        font-size:20px; color:#333; line-height:50px; background:none; border:0; outline:0; 
+        transition:all 0.4s ease-in;
+    }
+    .search-btn { 
+        float:right;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        width:50px; height:50px;
+        color:#821491;
+        background:#fff; border-radius:50%; text-decoration:none;
+        transition:all 0.4s ease-in 0.3s;
+    }
+    .fa-search { font-size:24px;}
+    .map:hover .search-txt { width:300px; padding:0 5px 0 15px; }
+    .map:hover .search-btn { background:#fff; }
+    
+    /*///// search /////*/
+
+    article { margin-bottom:120px; }
+
+
+    article h3, article .txt2 { margin:0 auto; text-align:center; }
+    article h3 { 
+        width:650px; 
+        margin-top:150px; padding-bottom:20px; 
+        font-size:50px;  border-bottom:1px solid #999; 
+    }
+    article .txt2 { font-size:28px; padding:20px 0 50px 0; }
+
+
+    article .nation {
+        display:flex;
+        align-items:center; 
+        width:770px; height:50px; margin:0 auto; padding-bottom:90px; 
+    }
+    article .nation li { 
+        width:20%; margin:0px auto; 
+        text-align:center; border-right:1px solid #999;
+    }
+    article .nation li:last-child { border:0; }
+
+
+
+    #maincon2 { width:1400px; margin:0 auto; padding:0px 25px; }
+    #maincon2 > li { 
+        position:relative;
+        width:400px; height:500px; margin:0 25px 50px; 
+        border-radius:15px; box-shadow:0 0 5px #000;
+        overflow:hidden;
+    }
+    .beername { 
+        display:flex;
+        justify-content:space-between; 
+        align-items:center;
+        position:absolute; bottom:0; z-index:9;
+        width:100%; height:80px; padding:0 30px 0 45px; 
+        background:#fff; 
+        border-bottom-left-radius:15px; border-bottom-right-radius:15px;
+        transition:all 0.4s ease-out 0.2s;
+    }
+
+    .beername > div > p { font-size:14px; font-weight:500;}
+    .beername > div > p span { 
+        color:#000!important; ; font-size:24px!important; ; text-transform:capitalize!important; ;  
+    }
+    /*
+    #maincon2 > li:nth-child(1) .beername > p { width:80px; }
+    #maincon2 > li:nth-child(2) .beername > p { width:120px; }
+    #maincon2 > li:nth-child(3) .beername > p { width:170px; }
+    #maincon2 > li:nth-child(4) .beername > p { width:80px; }
+    #maincon2 > li:nth-child(5) .beername > p { width:80px; }
+    #maincon2 > li:nth-child(6) .beername > p { width:80px; }
+*/
+    .beercon { 
+        position:absolute; left:0px; top:0; 
+        width:100%; height:100%; background:rgba(0,0,0,0.6); opacity:0;
+        transition:all 0.4s ease-out 0.2s;
+    }
+    .beercon li { 
+        position:absolute; top:45%; left:50%; 
+        text-align:center; transform:translate(-50%); 
+    }
+    .beercon li .bh5, .beercon li p { color:#fff; text-shadow:1px 1px 3px #000; }
+    .beercon li .bh5 { padding-bottom:30px; font-size:24px; font-weight:500; }
+    .beercon li p { width:200px; font-size:18px; }
+    
+
+
+    a#next { display:none; }
+
+    /*///// hover /////*/
+
+    #maincon2 > li:hover .beername { 
+        bottom:300px; border-radius:0; transition:all 0.4s ease-out;
+    }
+    #maincon2 > li:hover .beercon { opacity:1; transition:all 0.4s ease-out; }
+    
+}
+
+@media screen and (max-width:1449px) and (min-width:1025px) {
+
+    .bn { width:100%; height:420px; background:#333; }
+    .bn h2 { top:50%; transform:translate(-50%,-50%); font-size:100px; letter-spacing:-5px; }
+
+
+    .container { height:500px; margin-top:150px; padding:25px 0;}
+    .mainbar1 { 
+        width:100%; height:100%; 
+        background: rgb(130,20,145);
+        background: -moz-linear-gradient(left, rgb(130,20,145) 0%, rgb(130,20,145) 60%, rgb(255,255,255) 61%, rgb(255,255,255) 100%);
+        background: -webkit-linear-gradient(left, rgb(130,20,145) 0%,rgb(130,20,145) 60%,rgb(255,255,255) 61%,rgb(255,255,255) 100%);
+        background: linear-gradient(to right, rgb(130,20,145) 0%,rgb(130,20,145) 60%,rgb(255,255,255) 61%,rgb(255,255,255) 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#821491', endColorstr='#ffffff',GradientType=1 );
+    }
+    .mainbar2 { display:flex; justify-content:space-between; width:1000px; height:100%; margin:0 auto; }
+
+    .maincon1 { width:400px; height:100%; padding:160px 0 0; color:#fff; }
+    .maincon1 h3 { padding-bottom:10px; font-size:38px; }
+    .maincon1 .txt1 { padding-bottom:15px; font-size:22px; }
+    .maincon1 p { width:400px; font-size:15px; }
+
+
+
+    .map { 
+        width:570px; height:600px; margin-top:-75px;  
+        background:url("../imgs/maphd.png") no-repeat right center #fff; 
+        border-top-left-radius:50%; border-bottom-left-radius:50%;
+    }
+
+    /*///// search /////*/
+
+    .search-box { 
+        position:absolute; left:55%; top:50%;
+        height:60px; margin-top:-30px; background:#fff; 
+        border:5px solid #a0a0a0; border-radius:60px;
+        transform:translateX(-50%);
+    }
+    .search-txt { 
+        float:left; width:0; padding:0; 
+        font-size:16px; color:#333; line-height:50px; background:none; border:0; outline:0; 
+        transition:all 0.4s ease-in;
+    }
+    .search-btn { 
+        float:right;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        width:50px; height:50px;
+        color:#821491;
+        background:#fff; border-radius:50%; text-decoration:none;
+        transition:all 0.4s ease-in 0.3s;
+    }
+    .fa-search { font-size:24px;}
+    .map:hover .search-txt { width:190px; padding:0 5px 0 15px; }
+    .map:hover .search-btn { background:#fff; }
+    
+    /*///// search /////*/
+
+    article { margin-bottom:50px; }
+
+
+    article h3, article .txt2 { margin:0 auto; text-align:center; }
+    article h3 { 
+        width:650px; 
+        margin-top:100px; padding-bottom:20px; 
+        font-size:38px;  border-bottom:1px solid #999; 
+    }
+    article .txt2 { font-size:22px; padding:20px 0 30px 0; }
+
+
+    article .nation {
+        display:flex;
+        align-items:center; 
+        width:770px; height:50px; margin:0 auto; padding-bottom:50px; 
+    }
+    article .nation li { 
+        width:20%; margin:0px auto; 
+        text-align:center; border-right:1px solid #999;
+    }
+    article .nation li:last-child { border:0; }
+
+
+
+    #maincon2 { display:flex; flex-wrap:wrap; justify-content:center; width:1000px; margin:0 auto; padding:0px 25px; }
+    #maincon2 > li { 
+        position:relative;
+        width:400px; height:500px; margin:0 25px 50px; 
+        border-radius:15px; box-shadow:0 0 5px #000;
+        overflow:hidden;
+    }
+    .beername { 
+        display:flex;
+        justify-content:space-between; 
+        align-items:center;
+        position:absolute; bottom:0; z-index:9;
+        width:100%; height:80px; padding:0 30px 0 45px; 
+        background:#fff; 
+        border-bottom-left-radius:15px; border-bottom-right-radius:15px;
+        transition:all 0.4s ease-out 0.2s;
+    }
+
+    .beername > div > p { font-size:14px; font-weight:500;}
+    .beername > div > p span { 
+        color:#000; font-size:24px; text-transform:capitalize;  
+    }
+
+    
+    .beercon { 
+        position:absolute; left:0px; top:0; 
+        width:100%; height:100%; background:rgba(0,0,0,0.6); opacity:0;
+        transition:all 0.4s ease-out 0.2s;
+    }
+    .beercon li { 
+        position:absolute; top:45%; left:50%; 
+        text-align:center; transform:translate(-50%); 
+    }
+    .beercon li .bh5, .beercon li p { color:#fff; text-shadow:1px 1px 3px #000; }
+    .beercon li .bh5 { padding-bottom:30px; font-size:24px; font-weight:500; }
+    .beercon li p { width:200px; font-size:18px; }
+    
+
+
+    a#next { display:none; }
+
+
+    /*///// hover /////*/
+
+    #maincon2 > li:hover .beername { 
+        bottom:300px; border-radius:0; transition:all 0.4s ease-out;
+    }
+    #maincon2 > li:hover .beercon { opacity:1; transition:all 0.4s ease-out; }
+    
+
+    a#next:hover {
+        color:#ccc; 
+        background:linear-gradient(to bottom,rgba(171,64,171,0.8),rgba(130,20,145,0.8));
+        text-shadow:1px 0px 1px #000; 
+        box-shadow:-1px 1px 1px rgba(255,255,255,1) inset,
+            -1px 2px 1px rgba(0,0,0,0.5); 
+    }
+    a#next:active { 
+        background:linear-gradient(to bottom,rgba(171,64,171,0.9),rgba(130,20,145,0.9));
+        box-shadow:0 0 3px 1px  rgba(3,3,3,0.5) inset,
+        0px 0px 0px rgba(0,0,0,0.5); 
+        transition:none;
+    }
+    a#next:hover::before { 
+        height:10px;
+        animation:nextlight 1.5s 1;
+    }
+
+}
+
+@media screen and (max-width:1024px) and (min-width:768px) {
+
+    .bn { width:100%; height:575px; background:#333; }
+    .bn h2 { left:25%; top:230px; width:220px; font-size:95px; line-height:67px; letter-spacing:-5px; }
+
+
+    .container { width:100%; height:750px; margin:0 0 80px; }
+    .mainbar1 { width:100%; height:100%; background:#821491;}
+    .mainbar2 { width:100%; height:100%; margin:0 auto; }
+
+    .maincon1 { width:100%; height:245px; padding:70px 20px 0px; margin-bottom:20px; color:#fff; }
+    .maincon1 h3 { padding-bottom:12px; font-size:38px; line-height:30px; text-align:center; }
+    .maincon1 .txt1 { padding-bottom:15px; font-size:22px; text-align:center; }
+    .maincon1 p { margin:0 auto; font-size:16px; text-align:center;}
+
+    .map { 
+        height:520px; margin-top:-25px; 
+        background:url("../imgs/maphd.png") no-repeat center bottom #fff; border-top-left-radius:50%; border-top-right-radius:50%;
+
+    }
+    
+    /*///// search /////*/
+
+    .search-box { 
+        position:absolute; left:50%; top:50%;
+        height:40px; margin-top:-20px; background:#fff; 
+        border:3px solid #a1a1a1; border-radius:46px;
+        transform:translateX(-50%);
+    }
+    .search-txt { 
+        float:left; width:0; padding:0;
+        color:#333; line-height:40px; background:none; border:0; outline:0; 
+        transition:all 0.4s ease-in;
+    }
+    .search-btn { 
+        float:right;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        width:34px; height:34px; 
+        color:#821491;
+        background:#fff; border-radius:50%; text-decoration:none;
+        transition:all 0.4s ease-in 0.3s;
+        
+    }
+    .fa-search { font-size:18px;}
+
+    .map:hover .search-txt { width:240px; padding:0 5px 0 15px; }
+    .map:hover .search-btn { background:#fff; }
+
+    
+    /*///// search /////*/
+
+    article { margin-bottom:50px; }
+
+
+    article h3, article .txt2 { margin:0 auto; text-align:center; }
+    article h3 { 
+        width:470px; 
+        margin-top:100px; padding-bottom:20px; 
+        font-size:40px;  border-bottom:1px solid #999; 
+    }
+
+    article .txt2 { font-size:22px; padding:20px 0 30px 0; }
+
+
+    article .nation {
+        display:flex;
+        align-items:center; 
+        width:500px; height:50px; margin:0 auto; padding-bottom:50px; 
+        font-size:16px; 
+    }
+    article .nation li { 
+        width:20%;
+        text-align:center; border-right:1px solid #999;
+    }
+    article .nation li:last-child { border:0; }
+
+
+
+    #maincon2 { display:flex; flex-wrap:wrap; justify-content:center; width:700px; margin:0 auto; padding:10px 25px; }
+
+    #maincon2 > li { 
+        position:relative;
+        width:400px; height:500px; margin:0 25px 50px; 
+        border-radius:15px; box-shadow:0 0 5px #000;
+        overflow:hidden;
+    }
+    .beername { 
+        display:flex;
+        justify-content:space-between; 
+        align-items:center;
+        position:absolute; bottom:0; z-index:9;
+        width:100%; height:80px; padding:0 30px 0 45px; 
+        background:#fff; 
+        border-bottom-left-radius:15px; border-bottom-right-radius:15px;
+        transition:all 0.4s ease-out 0.2s;
+    }
+
+    .beername > div > p { font-size:14px; font-weight:500;}
+    .beername > div > p span { 
+        color:#000; font-size:24px; text-transform:capitalize;  
+    }
+    /*
+    #maincon2 > li:nth-child(1) .beername > p { width:80px; }
+    #maincon2 > li:nth-child(2) .beername > p { width:120px; }
+    #maincon2 > li:nth-child(3) .beername > p { width:170px; }
+    #maincon2 > li:nth-child(4) .beername > p { width:80px; }
+    #maincon2 > li:nth-child(5) .beername > p { width:80px; }
+    #maincon2 > li:nth-child(6) .beername > p { width:80px; }
+*/
+    .beercon { 
+        position:absolute; left:0px; top:0; 
+        width:100%; height:100%; background:rgba(0,0,0,0.6); opacity:0;
+        transition:all 0.4s ease-out 0.2s;
+    }
+    .beercon li { 
+        position:absolute; top:45%; left:50%; 
+        text-align:center; transform:translate(-50%); 
+    }
+    .beercon li .bh5, .beercon li p { color:#fff; text-shadow:1px 1px 3px #000; }
+    .beercon li .bh5 { padding-bottom:30px; font-size:24px; font-weight:500; }
+    .beercon li p { width:200px; font-size:18px; }
+
+
+    a#next { 
+        position:relative; 
+        width:150px; height:50px; margin:0px auto 35px; 
+        background:linear-gradient(to bottom,rgba(130,20,145),rgba(171,64,171)); color:#fff; text-align:center; font-size:16px; 
+        line-height:50px; border:1px solid rgba(0,0,0,0.3); border-radius:25px; 
+        text-shadow:1px 0px 1px #000; 
+        box-shadow:0px 0px 0px rgba(255,255,255,1) inset, 1px 1px 1px rgba(0,0,0,0.5); 
+        transition:all 0.4s ease-in; overflow:hidden;
+    }
+    a#next::before { 
+        content:"";
+        position:absolute; left:-70%; top:100%; 
+        width:200px; height:30px; background:rgba(255,255,255,0.3); 
+        transform:rotate(45deg); transition:all 0.4s ease-in;
+    }
+
+    @keyframes nextlight {
+        0% { left:-70%; top:100%; }
+        100% { left:110%; top:-10%; }
+    }
+
+    /*///// hover /////*/
+
+    #maincon2 > li:hover .beername { 
+        bottom:300px; border-radius:0; transition:all 0.4s ease-out;
+    }
+    #maincon2 > li:hover .beercon { opacity:1; transition:all 0.4s ease-out; }
+    
+    a#next:hover {
+        color:#ccc; 
+        background:linear-gradient(to bottom,rgba(171,64,171,0.8),rgba(130,20,145,0.8));
+        text-shadow:1px 0px 1px #000; 
+        box-shadow:-1px 1px 1px rgba(255,255,255,1) inset,
+            -1px 2px 1px rgba(0,0,0,0.5); 
+    }
+    a#next:active { 
+        background:linear-gradient(to bottom,rgba(171,64,171,0.9),rgba(130,20,145,0.9));
+        box-shadow:0 0 3px 1px  rgba(3,3,3,0.5) inset,
+        0px 0px 0px rgba(0,0,0,0.5); 
+        transition:none;
+    }
+    a#next:hover::before { 
+        height:10px;
+        animation:nextlight 1.5s 1;
+    }
+
+}
+
+@media screen and (max-width:767px) {
+
+    .bn { width:100%; height:400px; background:#333; }
+    .bn h2 { 
+        left:30%;
+        width:150px; margin-top:160px; 
+        font-size:70px; line-height:50px; letter-spacing:-5px;
+    }
+
+    .container { width:100%; height:540px; margin:0 0 80px; }
+    .mainbar1 { width:100%; height:100%; background:#821491; }
+    .mainbar2 { width:100%; height:100%; margin:0 auto; }
+
+    .maincon1 { 
+        width:100%; height:245px; margin-bottom:30px; padding-top:80px; 
+        color:#fff; text-align:center; 
+    }
+    .maincon1 h3 { padding-bottom:10px; font-size:32px; line-height:30px;}
+    .maincon1 .txt1 { width:300px; margin:5px auto 0; padding-bottom:20px; font-size:20px; }
+    .maincon1 p { width:200px; margin:0 auto; font-size:15px; }
+
+    .map { 
+        height:270px; 
+        background:url("../imgs/mapmob.png") no-repeat center bottom #fff; border-top-left-radius:50%; border-top-right-radius:50%;
+    }
+
+    /*///// search /////*/
+
+    .search-box { 
+        position:absolute; left:50%; top:50%;
+        height:40px; margin-top:-20px; background:#fff; 
+        border:3px solid #a1a1a1; border-radius:46px;
+        transform:translateX(-50%);
+    }
+    .search-txt { 
+        float:left; width:0; padding:0;
+        color:#333; line-height:40px; background:none; border:0; outline:0; 
+        transition:all 0.4s ease-in;
+    }
+    .search-btn { 
+        float:right;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        width:34px; height:34px; 
+        color:#821491;
+        background:#fff; border-radius:50%; text-decoration:none;
+        transition:all 0.4s ease-in 0.3s;
+        
+    }
+    .fa-search { font-size:18px;}
+
+    .map:hover .search-txt { width:120px; padding:0 5px 0 15px; }
+    .map:hover .search-btn { background:#fff; }
+
+    
+    /*///// search /////*/
+
+    article { margin-bottom:50px; }
+
+
+    article h3, article .txt2 { margin:0 auto; text-align:center; }
+    article h3 { 
+        width:280px; 
+        margin-top:100px; padding-bottom:20px; 
+        font-size:36px;  border-bottom:1px solid #999; 
+    }
+
+    article .txt2 { font-size:18px; padding:15px 0 30px 0; }
+
+
+    article .nation { 
+        display:flex; flex-wrap:wrap; justify-content:center; 
+        width:290px; margin:0 auto;
+    }
+    article .nation li { 
+        width:25%; height:15px; margin-bottom:10px; 
+        text-align:center; border-right:1px solid #999;
+    }
+    article .nation li:last-child { border:0; }
+
+
+
+    #maincon2 { width:320px; margin:0 auto; }
+    #maincon2.hid { overflow:hidden; }
+    #maincon2 > li { 
+        position:relative;
+        width:300px; height:375px; margin:10px 10px 40px;; 
+        border-radius:15px; box-shadow:0 0 5px #000;
+        overflow:hidden;
+    }
+    #maincon2 > li:first-child { margin-top:20px; }
+    .beername { 
+        display:flex;
+        justify-content:space-between; 
+        align-items:center;
+        position:absolute; bottom:0; z-index:9;
+        width:100%; height:60px; padding:0 20px; 
+        background:#fff; 
+        border-bottom-left-radius:15px; border-bottom-right-radius:15px;
+        transition:all 0.4s ease-out 0.2s;
+    }
+
+    .beername > div > p { font-size:10px; font-weight:500;}
+    .beername > div > p span { color:#000; font-size:18px; text-transform:capitalize; }
+/*
+    #maincon2 > li:nth-child(1) .beername > p { width:50px; }
+    #maincon2 > li:nth-child(2) .beername > p { width:80px; }
+    #maincon2 > li:nth-child(3) .beername > p { width:130px; }
+    #maincon2 > li:nth-child(4) .beername > p { width:80px; }
+    #maincon2 > li:nth-child(5) .beername > p { width:60px; }
+    #maincon2 > li:nth-child(6) .beername > p { width:80px; }
+*/
+
+    .beercon { 
+        position:absolute; left:0px; top:0; 
+        width:100%; height:100%; background:rgba(0,0,0,0.6); opacity:0;
+        transition:all 0.4s ease-out 0.2s;
+    }
+    .beercon li { 
+        position:absolute; top:50%; left:50%; 
+        text-align:center; transform:translate(-50%); 
+    }
+    .beercon li .bh5, .beercon li p { color:#fff; text-shadow:1px 1px 3px #000; }
+    .beercon li .bh5 { display:none; padding-bottom:30px; font-size:18px; font-weight:500; }
+    .beercon li p { width:200px; font-size:16px; }
+
+
+    a#next { 
+        position:relative; 
+        width:150px; height:50px; margin:0px auto 35px; 
+        background:linear-gradient(to bottom,rgba(130,20,145),rgba(171,64,171)); color:#fff; text-align:center; font-size:16px; 
+        line-height:50px; border:1px solid rgba(0,0,0,0.3); border-radius:25px; 
+        text-shadow:1px 0px 1px #000; 
+        box-shadow:0px 0px 0px rgba(255,255,255,1) inset, 1px 1px 1px rgba(0,0,0,0.5); 
+        transition:all 0.4s ease-in; overflow:hidden;
+    }
+    a#next::before { 
+        content:"";
+        position:absolute; left:-70%; top:100%; 
+        width:200px; height:30px; background:rgba(255,255,255,0.3); 
+        transform:rotate(45deg); transition:all 0.4s ease-in;
+        
+    }
+
+    @keyframes nextlight {
+        0% { left:-70%; top:100%; }
+        100% { left:110%; top:-10%; }
+    }
+
+    /*///// hover /////*/
+
+    #maincon2 > li:hover .beername { 
+        bottom:220px; border-radius:0; transition:all 0.4s ease-out;
+    }
+    #maincon2 > li:hover .beercon { opacity:1; transition:all 0.4s ease-out; }
+    
+    a#next:hover {
+        color:#ccc; 
+        background:linear-gradient(to bottom,rgba(171,64,171,0.8),rgba(130,20,145,0.8));
+        text-shadow:1px 0px 1px #000; 
+        box-shadow:-1px 1px 1px rgba(255,255,255,1) inset,
+            -1px 2px 1px rgba(0,0,0,0.5); 
+    }
+    a#next:active { 
+        background:linear-gradient(to bottom,rgba(171,64,171,0.9),rgba(130,20,145,0.9));
+        box-shadow:0 0 3px 1px  rgba(3,3,3,0.5) inset,
+        0px 0px 0px rgba(0,0,0,0.5); 
+        transition:none;
+    }
+    a#next:hover::before { 
+        height:10px;
+        animation:nextlight 1.5s 1;
+    }
+}
+
+   .beername .tri { display:flex; justify-content:flex-end; align-items:center; width:130px; height:50px; margin-bottom:10px;}
+   .tri > a { font-size:30px; margin-left:20px; }
+   .tri .admincon { font-size:25px; color:#b4b4b4; }
+	.dumi { width:100%; height:100%; background:#c4c4c4; }
+	.insertB { position:relative; top:50%; left:50%;  width:120px; height:120px; transform:translate(-50%,-50%);  border-radius:20px; background:rgba(255,255,255,0.6);  }
+	.insertB i { position:absolute; top:50%; left:50%; display:block; font-size:50px; transform:translate(-50%,-50%); color:#fff;  }

@@ -1,0 +1,520 @@
+@charset "utf-8";
+
+
+* { margin:0; padding:0; box-sizing:border-box; }
+
+@media screen and (min-width:1450px) {
+.tb, .sm, .sm-txt, .bnsub .tbbn, .container, .container1, #next { display:none; }
+
+/*//// banner ////*/
+.bn1 { 
+    position:relative;
+    width:100%; height:570px; margin:0 auto; }
+.bn1 h2 {
+    position:absolute; left:50%; top:50%;
+    font-family:const; font-size:100px; color:#fff; text-transform:capitalize;
+    transform:translate(-50%, -50%); 
+}
+.bn1 span { color:#ffb400; font-size:100px; }
+
+.bnsub { 
+    position:relative;
+    width:1000px; height:100%; margin:0 auto;
+    
+}
+.bnblack {
+    width:100%; height:100%; background: rgba(0, 0, 0, 0.65);
+    
+}
+.bn1:hover .bnblack { background: rgba(0, 0, 0, 0.3); }
+.bn1:hover h2 { opacity: 0.1;}
+/*//// 맥주의 역사 ////*/
+section { width:1300px;  margin:0 auto;  }
+.t1 { 
+    width:100%; height:250px; padding:140px 0;  
+     
+}
+.t1 h3 { 
+    padding-bottom: 30px; 
+    font-size:50px;  
+    color:#000; border-bottom: 1px solid #b4b4b4;
+ }
+.t1 h3 span { color:#ffb400; }
+.lbox { width:23%; height:400px; padding-top:150px; text-align:justify; }
+.lbox h4{ width:55%; margin:0 48px 0; background:rgba(255, 212, 0, 0.4); font-size:28px; color:#333; font-family: 'Noto Sans KR', sans-serif; }
+.lbox p { width:70%; height:200px; margin:0 30px 0; padding-top:10px; color:#636363;}
+
+/*//// 맥주의 일대기 ////*/
+
+.abox { float:right;}
+article:last-child { margin:0; }
+article h5 { padding-top:55px; font-size:30px; text-align:center; font-family: 'Noto Sans KR', sans-serif; }
+article h5 span { color:#821491;  }    
+
+article .abox p { 
+padding-left:50px; font-size:18px; 
+background:#e7e7e7; color:#000; font-family: 'Noto Sans KR', sans-serif;
+}
+article .abox p span { color:#821491; }
+
+
+
+/*//// 맥주의 효능 ////*/
+.t2 { 
+    width:100%; padding:0 0 40px; 
+     
+}
+.t2 h3 { 
+    padding:140px 0 20px;
+    font-size:50px; 
+    color:#000; border-bottom: 1px solid #b4b4b4;
+ }
+.t2 h3 span { color:#ffb400;}
+.t2 h4 { padding-top:20px; font-size:28px; color:#333; font-family: 'Noto Sans KR', sans-serif;}
+
+
+article { margin:30px 0; }
+.leftBox, .rightBox { width:48%; border-radius: 10px; overflow: hidden; background: #ffb400;}
+.leftBox { float:left; }
+.rightBox { float:right; }
+
+.left { float:left; width:60%; height:300px; background: url(../imgs/efficacy111.jpg) no-repeat center; 
+        background-size: cover;  }
+.rightBox .left { background: url(../imgs/efficacy222.jpg) no-repeat center; background-size:cover;}
+article:nth-child(4) .leftBox .left { background: url(../imgs/efficacy333.jpg) no-repeat center; background-size:cover; }
+article:nth-child(4) .rightBox .left { background: url(../imgs/efficacy444.jpg) no-repeat center; background-size:cover; }
+article:nth-child(6) .leftBox .left { background: url(../imgs/efficacy555.jpg) no-repeat center; background-size:cover; }
+
+
+.right { float:right; width:40%; height:300px; padding:85px 20px;  background: #e7e7e7; border-left:1px solid #b4b4b4; } 
+.right h4 { font-size:18px; color:#821491; font-family: 'Noto Sans KR', sans-serif; }
+.right p { text-align: justify; color:#333;  padding-top:20px; font-family: 'Noto Sans KR', sans-serif; }
+
+footer { margin-top:100px;}
+}
+
+
+@media screen and (min-width:1025px) and (max-width:1449px) {
+.tb, .sm, .sm-txt, .bnsub .tbbn, .container, .container1, #next { display:none; }
+ /* ///// bnner ///// */
+.bn1 { 
+    position:relative;
+    width:100%; height:400px; margin:0 auto; }
+.bn1 h2 {
+    position:absolute; left:50%; top:50%;
+    font-family:const; font-size:100px; color:#fff; text-transform:capitalize;
+    transform:translate(-50%, -50%); 
+}
+.bn1 span { color:#ffb400; font-size:100px; }
+
+.bnsub { 
+    position:relative;
+    width:1000px; height:100%; margin:0 auto;
+    
+}
+.bnblack {
+    width:100%; height:400px; background: rgba(0, 0, 0, 0.65);
+    
+}
+.bn1:hover .bnblack { background: rgba(0, 0, 0, 0.3); }
+.bn1:hover h2 { opacity: 0.1;}
+/*//// 맥주의 역사 ////*/
+section { width:1000px; margin:0 auto;   }
+.t1 { 
+    width:100%; height:360px; padding-top:120px  
+     
+}
+.t1 h3 { 
+    padding-bottom: 20px; 
+    font-size:50px; color:#000; 
+    border-bottom: 1px solid #b4b4b4;
+ }
+.t1 h3 span { color:#ffb400;}
+.t1 h4 { margin:0 auto; padding-left:20px; color:#636363; font-size:28px;  font-family: 'Noto Sans KR', sans-serif;}
+.t1 p { width:68%; margin:0 auto; font-size:16px; }
+
+/*//// 맥주의 일대기 ////*/
+
+article { 
+width:100%; margin:0 auto; margin-right:50px;  
+} 
+article:last-child { margin:0; }
+article h5 { padding-top:55px; font-size:30px; text-align:center; font-family: 'Noto Sans KR', sans-serif; }
+article h5 span { color:#821491;  }    
+
+article .abox p { 
+    width: 320px; 
+    font-size:18px; 
+    background:#e7e7e7; color:#000; font-family: 'Noto Sans KR', sans-serif;
+}
+article .abox p span { color:#821491; }
+
+
+
+
+
+/*//// 맥주의효능 ////*/
+
+
+.t2 { 
+    width:100%; padding:0 0 40px; 
+     
+}
+.t2 h3 { 
+    padding:120px 0 20px;
+    font-size:50px; color:#000;
+    border-bottom: 1px solid #b4b4b4;
+ }
+.t2 h3 span { color:#ffb400;}
+.t2 h4 { padding-top:20px; font-size:26px; color:#636363; font-family: 'Noto Sans KR', sans-serif;}
+
+
+
+article { margin:30px 0; }
+.leftBox, .rightBox { width:48%; border-radius: 10px; overflow: hidden; background: #ffb400;}
+.leftBox { float:left; }
+.rightBox { float:right; }
+
+.left { float:left; width:55%; height:300px; background: url(../imgs/efficacy111.jpg) no-repeat center; 
+        background-size: cover; }
+.rightBox .left { background: url(../imgs/efficacy222.jpg) no-repeat center; background-size:cover;}
+article:nth-child(4) .leftBox .left { background: url(../imgs/efficacy333.jpg) no-repeat center; background-size:cover; }
+article:nth-child(4) .rightBox .left { background: url(../imgs/efficacy444.jpg) no-repeat center; background-size:cover; }
+article:nth-child(6) .leftBox .left { background: url(../imgs/efficacy555.jpg) no-repeat center; background-size:cover; }
+
+.right { float:right; width:45%; height:300px; padding:90px 10px; background: #e7e7e7; border-left:1px solid #b4b4b4;} 
+.right h4 { width:95%; margin:0 20px 0; font-size:18px; color:#821491; font-family: 'Noto Sans KR', sans-serif; }
+.right p { width:80%; padding-top:20px; margin:0 auto; text-align: justify; color: #333;   font-family: 'Noto Sans KR', sans-serif; }
+
+footer { margin-top:90px; }
+}
+
+
+
+@media screen and (min-width:768px) and (max-width:1024px)  {
+.abox, .sm, .sm-txt, .bnsub .hdbn, .container1, #next { display:none;}
+    /* ///// bnner ///// */
+.bn1 { 
+    position:relative;
+    width:100%; height:570px; margin:0 auto; 
+}
+.bn1 h2 {
+    width:230px; position:absolute; top:38%; left:13%; 
+    font-family:const; font-size:80px; color:#fff; text-transform:capitalize;
+    
+}
+.bn1 h2 { color:#ffb400; }
+.bn1 h2:last-child { margin-top:55px; color: #fff;}
+.bnblack {
+    width:100%; height:100%; background: rgba(0, 0, 0, 0.65); 
+     
+}
+
+    /*//// 맥주의 역사 ////*/
+section { width:728px;   margin:0 auto; }
+.t1 { 
+    width:100%; padding-top:85px; text-align: center;
+        
+}
+.t1 h3 { 
+    padding-bottom: 20px; margin:0 auto; width:292px;
+    font-size:40px; color:#000;
+    border-bottom: 1px solid #b4b4b4;
+    }
+.t1 h3 span { color:#ffb400;}
+.t1 h4 { padding:25px 0 15px; font-size:22px; color:#636363; font-family: 'Noto Sans KR', sans-serif;}
+.t1 p { width:82%; margin:0 auto; font-size:16px; color:#636363; text-align:center; }
+
+
+/*//// 맥주의 일대기 ////*/
+
+
+input { display:none;}
+
+
+body { 
+    font-family: 'Noto Sans', sans-serif; font-family: 'Noto Sans KR', sans-serif; 
+    font-size:15px; color:#333; background:url('./imgs/bgnoise_lg.jpg');
+}
+input { display:none; }
+
+
+
+.container { width:60%; margin:50px auto; }
+/*===== Accordion menu =====*/
+label { 
+    display:block; position:relative; 
+    height:45px; padding-left:20px; 
+    font-size:18px; color:#fff; line-height:45px; text-align: center;
+    text-transform:uppercase; text-shadow:1px 1px 1px #f4f4f4;
+    background:linear-gradient(to bottom, #821491, rgba(130, 20, 145, 0.7));
+    box-shadow:0 0 0 1px rgba(155,155,155,0.3) inset,
+        0 2px 2px rgba(0,0,0,0.2);
+    cursor:pointer; transition:all 0.3s ease-in; 
+}
+label::after { 
+    content:"";
+    position:absolute; right:20px; top:20px;
+    width:14px; height:9px; background:url(../imgs/arrow_down.png);
+}
+label:hover { background:rgba(130, 20, 145, 0.5); }
+label:hover::after { 
+    content:"";
+    position:absolute; right:20px; top:20px;
+    width:14px; height:9px; background:url(../imgs/arrow_down.png);
+}
+/*===== Accordion contents =====*/
+.ac { 
+    height:0;
+    background:rgba(255,255,255,0.5); overflow:hidden;
+    box-shadow:0 0 0 1px rgba(155,155,155,0.6) inset;
+    transition:all 0.4s ease-out 0.2s; 
+}
+.labelImg { float:left; width:60%; height:300px; background:url(../imgs/smez.jpg) no-repeat center; background-size:cover; border-right:1px solid #333;}
+.labelImg-2 { float:right; width:60%; height:300px; background:url(../imgs/smeurope.jpg) no-repeat center; background-size:cover; border-left:1px solid #333;}
+.labelImg-3 { float:left; width:60%; height:300px; background:url(../imgs/smjapan.jpg) no-repeat center; background-size:cover; border-right:1px solid #333; }
+.labelp { float:right; width:40%; height:300px; padding-top:95px; background:#e7e7e7; color:#000; text-align: justify; }
+.labelp span { color: #821491;}
+.ac p { padding:20px; }
+
+
+/*===== input:checked ===== */
+/* + 인접선택자 */
+input:checked + label { 
+    color:#fff; background:rgba(130, 20, 145, 1);
+    box-shadow:0 0 0 5px rgba(155,155,155,0.1) inset,
+        0 2px 2px rgba(0,0,0,0.2);
+}
+input:checked + label::after { background:url(../imgs/arrow_up.png); }
+/* 인접선택자(한칸 떨어짐) */
+input:checked ~ .ac { 
+    background:rgba(255,255,255,0.75);
+    box-shadow:0 0 0 5px rgba(155,155,155,0.2) inset;
+}
+input#ac-1:checked ~ .content-1 { height:300px; }
+input#ac-2:checked ~ .content-2 { height:300px; }
+input#ac-3:checked ~ .content-3 { height:300px; }
+
+/*//// 맥주의 효능 ////*/ 
+.t2 { 
+     padding:40px 0 40px; 
+     
+}
+.t2 h3 { 
+    padding:0px 0 20px; width:292px; margin:0 auto;
+    font-size:40px; color:#000; text-align: center;
+     border-bottom: 1px solid #b4b4b4;
+ }
+.t2 h3 span { color:#ffb400;}
+.t2 h4 { padding:25px 0 15px; font-size:22px; color:#636363; font-family: 'Noto Sans KR', sans-serif; text-align:center;}
+
+.tb3 p { text-align: center;}
+.box3 p:nth-child(2) { margin-top:-115px;  }
+
+article { margin:30px 0; }
+.leftBox, .rightBox { width:43%; border-radius:10px; overflow: hidden; }
+.leftBox { float:left; margin-left:5%; }
+.rightBox { float:right; margin-right:5%; }
+
+.left { width:100%; height:250px; background: url(../imgs/efficacy111.jpg) no-repeat center; 
+        background-size: cover; border-bottom: 1px solid #b4b4b4;}
+.rightBox .left { background: url(../imgs/efficacy222.jpg) no-repeat center; background-size:cover;border-top: 1px solid #b4b4b4;}
+article:nth-child(4) .leftBox .left { background: url(../imgs/efficacy333.jpg) no-repeat center; background-size:cover; border-top: 1px solid #b4b4b4; }
+article:nth-child(4) .rightBox .left { background: url(../imgs/efficacy444.jpg) no-repeat center; background-size:cover; border-top: 1px solid #b4b4b4;}
+article:nth-child(6) .leftBox .left { background: url(../imgs/efficacy555.jpg) no-repeat center; background-size:cover; border-top: 1px solid #b4b4b4;}
+
+.right {  width:100%; height:130px; padding:10px; margin:0 auto; background: #e7e7e7; border-radius:0 0 10px 10px;} 
+.right h4 { font-size:16px; padding:0 30px; color:#821491; font-family: 'Noto Sans KR', sans-serif; }
+.right p { width:100%; padding:5px 30px;text-align: justify; color: #333;   font-family: 'Noto Sans KR', sans-serif; }
+
+footer { margin-top: 80px;}
+}
+    
+    
+@media screen and (max-width:767px) {
+#js_version, .tb, .fr, .t1 :nth-child(4), .bnsub .hdbn,.container, .txt { display:none; }
+
+/* ///// bnner ///// */
+.bn1 { 
+    position:relative;
+    width:100%; height:400px; margin:0 auto; }
+
+.bn1 h2 {
+    width:230px; position:absolute; top:35%; left:20%; 
+    font-family:const; font-size:70px; color:#ffb400; text-transform:capitalize;
+     font-family: 'Noto Sans KR', sans-serif;
+}
+.bn1 .bnsub h2 { font-family:const;}
+.bn1 h2:last-child { margin-top:40px; color: #fff;}
+.bnblack {
+    width:100%; height:400px; background: rgba(0, 0, 0, 0.65); 
+    
+}
+.bn1:hover .bnblack { background: rgba(0, 0, 0, 0.3); }
+.bn1:hover h2 { opacity: 0.1;}
+
+
+/*//// 맥주의 역사 ////*/
+section { width:100%; margin:0 auto;  }
+.t1 { 
+    width:100%;  padding:85px 0 0px; text-align: center; font-family: 'Noto Sans KR', sans-serif;
+        
+}
+.t1 h3 { 
+    padding-bottom: 20px; margin:0 auto;  width:292px;
+    font-size:32px; color:#000; 
+     border-bottom: 1px solid #b4b4b4;
+    }
+.t1 h3 span { color:#ffb400;}
+.t1 h4 { padding:20px 0 15px; color:#636363; font-size:20px;  font-family: 'Noto Sans KR', sans-serif; }
+.t1 .sm-txt { width:300px; margin:0 auto; font-size:14px; color:#636363;  }
+
+
+
+
+/*//// 맥주의 일대기 ////*/
+
+
+input { display:none;}
+
+
+
+.container1 { width:60%; margin:25px auto; }
+/*===== Accordion menu =====*/
+label { 
+    display:block; position:relative; 
+    height:45px; 
+    font-size:16px; color:#fff; line-height:45px; text-align: center;
+    text-transform:uppercase; text-shadow:1px 1px 1px #f4f4f4;
+    background:linear-gradient(to bottom, #821491, rgba(130, 20, 145, 0.7));
+    box-shadow:0 0 0 1px rgba(155,155,155,0.3) inset,
+        0 2px 2px rgba(0,0,0,0.2);
+    cursor:pointer; transition:all 0.3s ease-in; 
+}
+label::after { 
+    content:"";
+    position:absolute; right:20px; top:20px;
+    width:14px; height:9px; background:url(../imgs/arrow_down.png);
+}
+label:hover { background:rgba(130, 20, 145, 0.5); }
+label:hover::after { 
+    content:"";
+    position:absolute; right:20px; top:20px;
+    width:14px; height:9px; margin-left:20px; background:url(../imgs/arrow_down.png);
+}
+/*===== Accordion contents =====*/
+.ac { 
+    height:0;
+    background:rgba(255,255,255,0.5); overflow:hidden;
+    box-shadow:0 0 0 1px rgba(155,155,155,0.6) inset;
+    transition:all 0.4s ease-out 0.2s; 
+}
+.labelImg-4 { width:100%; height:300px; background:url(../imgs/smez.jpg) no-repeat top left; background-size:cover; border-bottom:1px solid #333; }
+.labelImg-5 {  width:100%; height:300px; background:url(../imgs/smeurope.jpg) no-repeat right; background-size:cover; border-bottom:1px solid #333;}
+.labelImg-6 {  width:100%; height:300px; background:url(../imgs/smjapan.jpg) no-repeat center; background-size:cover; border-bottom:1px solid #333; }
+.labelp { 
+    width:100%; height:100px; padding:30px;  
+    background:#e7e7e7; color:#000; text-align: justify; 
+    
+}
+.labelp span { color: #821491;}
+.ac p { height:100px; font-size:12px; background:#e7e7e7; }
+
+
+/*===== input:checked ===== */
+/* + 인접선택자 */
+input:checked + label { 
+    color:#fff; background:rgba(130, 20, 145, 1);
+    box-shadow:0 0 0 5px rgba(155,155,155,0.1) inset,
+        0 2px 2px rgba(0,0,0,0.2);
+}
+input:checked + label::after { background:url(../imgs/arrow_up.png); }
+/* 인접선택자(한칸 떨어짐) */
+input:checked ~ .ac { 
+    background:rgba(255,255,255,0.75);
+    box-shadow:0 0 0 5px rgba(155,155,155,0.2) inset;
+}
+input#ac-4:checked ~ .content-4 { height:400px; }
+input#ac-5:checked ~ .content-5 { height:400px; }
+input#ac-6:checked ~ .content-6 { height:400px; }
+
+
+/*//// 맥주의 효능 ////*/ 
+
+.t2 { 
+    width:100%; 
+     
+}
+.t2 h3 { 
+    padding:40px 0 20px; width:292px; margin:0 auto;
+    font-size:32px; text-align: center;
+    color:#000; border-bottom: 1px solid #b4b4b4;
+ }
+.t2 h3 span { color:#ffb400;}
+.t2 h4 { padding:20px 0 40px; color:#636363; font-size:20px;  font-family: 'Noto Sans KR', sans-serif; text-align: center;}
+
+
+article { margin:30px 0; }
+.leftBox, .rightBox { width:60%; overflow: hidden;  margin:0 auto; border-radius: 10px;}
+.leftBox { margin-bottom: 30px;}
+
+
+.left {  width:100%; height:250px; background: url(../imgs/efficacy111.jpg) no-repeat center; 
+        background-size: cover; }
+.rightBox .left { background: url(../imgs/efficacy222.jpg) no-repeat center; background-size:cover;}
+article:nth-child(4) .leftBox .left { background: url(../imgs/efficacy333.jpg) no-repeat center; background-size:cover; }
+article:nth-child(4) .rightBox .left { background: url(../imgs/efficacy444.jpg) no-repeat center; background-size:cover;  }
+article:nth-child(6) .leftBox .left { background: url(../imgs/efficacy555.jpg) no-repeat center; background-size:cover; padding-top:40px;  }
+
+.right { width:100%; height:110px; margin:0 auto;  background: #e7e7e7; border-radius:0 0 10px 10px;  border-top:1px solid #333; } 
+.right h4 {padding-top:20px; margin-left:30px;font-size:14px; color:#821491; font-family: 'Noto Sans KR', sans-serif; }
+.right p { padding-top:10px; margin:0 30px; text-align: justify; line-height:17px; color: #333; font-size:12px; font-family: 'Noto Sans KR', sans-serif;  }
+
+a#next { 
+    position:relative; 
+    width:150px; height:50px; margin:0px auto 35px; 
+    background:linear-gradient(to bottom,rgba(130,20,145),rgba(171,64,171)); color:#fff; text-align:center; font-size:16px; 
+    line-height:50px; border:1px solid rgba(0,0,0,0.3); border-radius:25px; 
+    text-shadow:1px 0px 1px #000; 
+    box-shadow:0px 0px 0px rgba(255,255,255,1) inset, 1px 1px 1px rgba(0,0,0,0.5); 
+    transition:all 0.4s ease-in; overflow:hidden;
+}
+a#next::before { 
+    content:"";
+    position:absolute; left:-70%; top:100%; 
+    width:200px; height:30px; background:rgba(255,255,255,0.3); 
+    transform:rotate(45deg); transition:all 0.4s ease-in;
+    
+}
+
+@keyframes nextlight {
+    0% { left:-70%; top:100%; }
+    100% { left:110%; top:-10%; }
+}
+
+a#next:hover {
+    color:#ccc; 
+    background:linear-gradient(to bottom,rgba(171,64,171,0.8),rgba(130,20,145,0.8));
+    text-shadow:1px 0px 1px #000; 
+    box-shadow:-1px 1px 1px rgba(255,255,255,1) inset,
+        -1px 2px 1px rgba(0,0,0,0.5); 
+}
+a#next:active { 
+    background:linear-gradient(to bottom,rgba(171,64,171,0.9),rgba(130,20,145,0.9));
+    box-shadow:0 0 3px 1px  rgba(3,3,3,0.5) inset,
+    0px 0px 0px rgba(0,0,0,0.5); 
+    transition:none;
+}
+a#next:hover::before { 
+    height:10px;
+    animation:nextlight 1.5s 1;
+}
+
+.hidden { height:990px; overflow: hidden;}
+
+
+.footer { margin-top: 60px;}
+}
+
+
+

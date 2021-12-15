@@ -1,0 +1,450 @@
+@charset "utf-8";
+
+@media screen and (min-width:1450px) {
+    /* ///// bnner ///// */
+    .bntb-txt {display: none;}
+    .bn2 { position:relative; width:100%; height:570px; margin:0 auto; }
+    .bnblack {
+        width:100%; height:100%; background: rgba(0, 0, 0, 0.65);
+    }
+    .bnsub { 
+        position:relative;
+        height:100%; margin:0 auto;
+    }
+    .bnblack h2 { 
+        position:absolute; left:50%; top:50%;
+        font-family:const; font-size:100px; color:#fff; text-transform:capitalize;
+        transform:translate(-50%, -50%);
+    }
+    .bnblack h2 span { color:#ffb400; }
+    .bn2:hover .bnblack { background: rgba(0, 0, 0, 0.3); }
+    .bn2:hover h2 { opacity: 0.1;}
+
+    /* ///// 맥주 제조방식 ///// */ 
+    section { width:1300px; margin:0 auto; }
+    .hd-txt, .tb, .sm, .sm-txt { display:none; }
+    .bm { padding-top:150px; }
+    .bm h3{ 
+        padding-bottom:30px; font-size:50px; 
+        color:#000; border-bottom: 1px solid #b4b4b4; 
+    }
+    .bm .fhdbox { float:left; width:300px; margin-top:140px;  text-align:left; }
+    .bm .fhdbox h4 { 
+        width:46%; margin:0 48px 0; background:rgba(255, 212, 0, 0.4); font-family: 'Noto Sans KR', sans-serif;  font-size:28px; color:#333; 
+    }
+    .bm .fhd-txt {  width:70%; height:200px; margin:0 30px 0; padding-top:10px; color:#636363; text-align: justify;}
+    .bm p { font-size:18px; color:#636363; }
+    .bm span { color:#ffb400; }
+    .bm span.purple { color:#821491; }
+
+    .beerbox {  float:right; margin:55px 0 -20px 0; }
+    .beerbox .all1, .beerbox .all2, .beerbox .all3 { width:800px; font-size:18px; text-align:center; }
+    .beerbox .all1, .beerbox .all3 { margin-top:120px; }
+    .beerbox .all2 { margin-top:90px; }
+    .beerbox .all1 span, .beerbox .all2 span, .beerbox .all3 span { color:#821491; }
+    .beerbox .all1 p:nth-child(3), .beerbox .all3 p:nth-child(3) { padding-top:50px; }
+    .beerbox .all2 p:nth-child(3), .beerbox .all2 p:nth-child(5) { padding-top:30px; }
+
+
+
+    /* ///// 맥주의 종류 ///// */
+    .container, .container2 { width:1240px; height:550px; margin:40px auto; }
+    .container2 { margin-bottom:150px; }
+    .container h4, .container2 h4 { 
+        width:100%; padding-bottom:30px; font-size:30px; text-align:center; text-transform:capitalize; 
+    }
+    .beerbt { 
+        width:140px; height:40px; margin:0 auto; text-align: center; line-height:35px;
+        border:3px solid #ffb400; border-radius:20px;
+        transition:all 0.4s ease-in;
+    }
+    .beerimg1 { width:100%; height:450px; background:url(../imgs/dt-ale1.jpg) no-repeat center; }
+    .beerimg2 { width:100%; height:450px; background:url(../imgs/dt-ale2.png) no-repeat center; }
+    .beerimg3 { width:100%; height:450px; background:url(../imgs/dt-ale3.png) no-repeat center; } 
+    .beerimg4 { width:100%; height:450px; background:url(../imgs/dt-ale4.png) no-repeat center; }
+    .beerimg5 { width:100%; height:450px; background:url(../imgs/dt-ale5.png) no-repeat center; }
+    .beerimg6 { width:100%; height:450px; background:url(../imgs/dt-ale6.png) no-repeat center; }
+    .beerimg7 { width:100%; height:450px; background:url(../imgs/dt-lager1.png) no-repeat center; }
+    .beerimg8 { width:100%; height:450px; background:url(../imgs/dt-lager2.png) no-repeat center; }
+    .beerimg9 { width:100%; height:450px; background:url(../imgs/dt-lager3.png) no-repeat center; }
+    .beerimg10 { width:100%; height:450px; background:url(../imgs/dt-lager4.png) no-repeat center; }
+    .beerimg11 { width:100%; height:450px; background:url(../imgs/dt-lager5.png) no-repeat center; }
+    .beerimg12 { width:100%; height:450px; background:url(../imgs/dt-lager6.png) no-repeat center; }
+    
+        /*///// hover /////*/
+    .beerbt:hover { width:140px; height:40px; background:#ffb400; }
+}
+
+
+
+
+@media screen and (min-width:1025px) and (max-width:1449px) {
+    /* ///// bnner ///// */
+    .bntb-txt {display: none;}
+    .bn2 { position:relative; width:100%; height:420px; margin:0 auto; }
+    .bnblack {
+        width:100%; height:100%; background: rgba(0, 0, 0, 0.65);
+    }
+    .bnsub { 
+        position:relative;
+        height:100%; margin:0 auto;
+    }
+    .bnblack h2 { 
+        position:absolute; left:50%; top:50%;
+        font-family:const; font-size:100px; color:#fff; text-transform:capitalize;
+        transform:translate(-50%, -50%);
+    }
+    .bnblack h2 span { color:#ffb400; }
+    .bn2:hover .bnblack { background: rgba(0, 0, 0, 0.3); }
+    .bn2:hover h2 { opacity: 0.1;}
+
+
+
+    /* ///// 맥주 제조방식 ///// */ 
+    section { width:1000px; margin:0 auto; }
+    .fhd-txt, .tb, .sm, .sm-txt { display:none; }
+    .bm { padding-top:120px; }
+    .bm h3{ 
+        padding-bottom:20px; font-size:50px; 
+        color:#000; border-bottom: 1px solid #b4b4b4; 
+    }
+    .bm h4 { 
+        padding:20px 0 10px 0;
+        font-family: 'Noto Sans KR', sans-serif; font-size:26px; color:#636363;
+    }
+    .bm p { font-size:18px; color:#636363; }
+    .bm span { color:#ffb400; }
+    .bm span.purple { color:#821491; }
+
+    .beerbox {  margin:55px 0 -20px 0; }
+    .beerbox .all1, .beerbox .all2, .beerbox .all3 { width:800px; font-size:18px; text-align:center; }
+    .beerbox .all1, .beerbox .all3 { margin-top:120px; }
+    .beerbox .all2 { margin-top:90px; }
+    .beerbox .all1 span, .beerbox .all2 span, .beerbox .all3 span { color:#821491; }
+    .beerbox .all1 p:nth-child(3), .beerbox .all3 p:nth-child(3) { padding-top:50px; }
+    .beerbox .all2 p:nth-child(3), .beerbox .all2 p:nth-child(5) { padding-top:30px; }
+
+
+
+    /* ///// 맥주의 종류 ///// */
+    .container, .container2 { width:930px; height:550px; margin:40px auto; }
+    .container2 { margin-bottom:120px; }
+    .container h4, .container2 h4 { 
+        width:100%; padding-bottom:30px; font-size:30px; text-align:center; text-transform:capitalize; 
+    }
+    .beerbt { 
+        width:140px; height:40px; margin:0 auto; text-align: center; line-height:35px;
+        border:3px solid #ffb400; border-radius:20px;
+        transition:all 0.4s ease-in;
+    }
+    .beerimg1 { width:100%; height:450px; background:url(../imgs/dt-ale1.jpg) no-repeat center; }
+    .beerimg2 { width:100%; height:450px; background:url(../imgs/dt-ale2.png) no-repeat center; }
+    .beerimg3 { width:100%; height:450px; background:url(../imgs/dt-ale3.png) no-repeat center; } 
+    .beerimg4 { width:100%; height:450px; background:url(../imgs/dt-ale4.png) no-repeat center; }
+    .beerimg5 { width:100%; height:450px; background:url(../imgs/dt-ale5.png) no-repeat center; }
+    .beerimg6 { width:100%; height:450px; background:url(../imgs/dt-ale6.png) no-repeat center; }
+    .beerimg7 { width:100%; height:450px; background:url(../imgs/dt-lager1.png) no-repeat center; }
+    .beerimg8 { width:100%; height:450px; background:url(../imgs/dt-lager2.png) no-repeat center; }
+    .beerimg9 { width:100%; height:450px; background:url(../imgs/dt-lager3.png) no-repeat center; }
+    .beerimg10 { width:100%; height:450px; background:url(../imgs/dt-lager4.png) no-repeat center; }
+    .beerimg11 { width:100%; height:450px; background:url(../imgs/dt-lager5.png) no-repeat center; }
+    .beerimg12 { width:100%; height:450px; background:url(../imgs/dt-lager6.png) no-repeat center; }
+    
+        /*///// hover /////*/
+    .beerbt:hover { width:140px; height:40px; background:#ffb400; }
+}
+
+
+
+
+@media screen and (min-width:768px) and (max-width:1024px) {
+    /* ///// bnner ///// */
+    .bnfhd-txt { display:none; }
+    .bn2 { position:relative; width:100%; height:570px; margin:0 auto; background:#333; }
+    .bn2 h2 {
+        width:230px; position:absolute; left:13%; top:38%;  
+        font-family:const; font-size:80px; color:#fff; text-transform:capitalize;
+    }
+    .bn2 h2 { color:#ffb400; }
+    .bn2 h2:last-child { margin-top:55px; color: #fff;}
+    .bnblack {
+        width:100%; height:100%; background: rgba(0, 0, 0, 0.65); 
+    }
+    .bn2:hover .bnblack { background: rgba(0, 0, 0, 0.3); }
+    .bn2:hover h2 { opacity: 0.1;}
+
+
+
+    /* ///// 맥주 제조방식 ///// */ 
+    .fhd-txt { display:none; }
+    section { width:728px; margin:0 auto; }
+    .beerbox, .sm-txt, article.sm { display:none; }
+
+    .bm { margin-top:85px; }
+    .bm h3{ 
+        width:292px; margin:0 auto; padding-bottom:20px;
+        font-size:40px; color:#000; border-bottom: 1px solid #b4b4b4; text-align:center;
+    }
+    .bm h4 { 
+        margin:0 auto; padding:25px 0 15px 0; font-family: 'Noto Sans KR', sans-serif; 
+        font-size:22px; color:#636363; text-align:center;
+    }
+    .bm p { margin:0 auto; font-size:16px; color:#636363; text-align:center; }
+    .bm span { color:#ffb400; }
+    .bm span.purple { color:#821491; }
+
+    article.tb { margin:0 auto; }
+    article.tb h5 { 
+        margin-top:50px; font-family: 'Noto Sans KR', sans-serif;  
+        font-size:26px; color:#636363; text-align:center; 
+    }
+    article.tb h5:first-child { margin-top:75px;}
+    article.tb h5 span { color:#821491; }
+
+
+
+
+    input { display:none; }
+    .tbcontainer { width:100%; margin:50px auto; }
+    /*===== Accordion menu =====*/
+    label { 
+        display:block; position:relative; 
+        height:45px; padding-left:20px; 
+        font-size:18px; color:#fff; line-height:45px; text-align: center;
+        text-transform:uppercase; text-shadow:1px 1px 1px #f4f4f4;
+        background: linear-gradient(to bottom, #821491, rgba(130, 20, 145, 0.7));
+        box-shadow:0 0 0 1px rgba(155,155,155,0.3) inset,
+            0 2px 2px rgba(0,0,0,0.2);
+        cursor:pointer; transition:all 0.3s ease-in; 
+    }
+    label::after { 
+        content:"";
+        position:absolute; right:20px; top:20px;
+        width:14px; height:9px; background:url(../imgs/arrow_down.png);
+    }
+    label span { color:#ffb400; }
+    label:hover { background:rgba(130, 20, 145, 0.5); }
+    label:hover::after { 
+        content:"";
+        position:absolute; right:20px; top:20px;
+        width:14px; height:9px; background:url(../imgs/arrow_down.png);
+    }
+    /*===== Accordion contents =====*/
+    .ac { 
+        height:0;
+        background:rgba(255,255,255,0.5); overflow:hidden;
+        box-shadow:0 0 0 1px rgba(155,155,155,0.6) inset;
+        transition:all 0.4s ease-out 0.2s; 
+    }
+    .labelImg { float:left; width:60%; height:300px; background:url(../imgs/article1.jpg) no-repeat center; background-size:cover; } 
+    .labelImg-2 { float:right; width:60%; height:300px; background:url(../imgs/article2.jpg) no-repeat center; background-size:cover; }
+    .labelImg-3 { float:left; width:60%; height:300px; background:url(../imgs/article3.jpg) no-repeat center; background-size:cover; }
+    .labelp { 
+        float:right; width:40%; height:300px; padding-top:50px; background:#e7e7e7; 
+        color:#000; text-align: justify; 
+    }
+    .labelp span { color: #821491; } 
+    .labelp li { width:100%; margin-bottom:10px; text-align: center; color:#821491; }
+    .labelp p { width:100%; text-align: center;  }
+    .content-1 .labelp ul:first-child { margin-top:15px; }
+    .content-1 .labelp ul:nth-child(2) { margin-top:30px; }
+    .content-2 .labelp ul:nth-child(2), .content-2 .labelp ul:nth-child(3) { margin-top:20px; }
+    .content-3 .labelp ul { margin-top:30px; }
+    
+    
+    /*===== input:checked ===== */
+    /* + 인접선택자 */
+    input:checked + label { 
+        color:#fff; background:rgba(130, 20, 145, 1);
+        box-shadow:0 0 0 5px rgba(155,155,155,0.1) inset,
+            0 2px 2px rgba(0,0,0,0.2);
+    }
+    input:checked + label::after { background:url(../imgs/arrow_up.png); }
+    /* 인접선택자(한칸 떨어짐) */
+    input:checked ~ .ac { 
+        background:rgba(255,255,255,0.75);
+        box-shadow:0 0 0 5px rgba(155,155,155,0.2) inset;
+    }
+    input#ac-1:checked ~ .content-1 { height:300px; }
+    input#ac-2:checked ~ .content-2 { height:300px; }
+    input#ac-3:checked ~ .content-3 { height:300px; }
+    
+
+
+
+    
+    /* ///// 맥주의 종류 ///// */
+    .container, .container2 { width:620px; height:550px; margin:40px auto; }
+    .container2 { margin-bottom:100px; }
+    .container h4, .container2 h4 { 
+        width:100%; padding-bottom:30px; font-size:30px; text-align:center; text-transform:capitalize; 
+    }
+    .beerbt { 
+        width:140px; height:40px; margin:0 auto; text-align: center; line-height:35px;
+        border:3px solid #ffb400; border-radius:20px;
+        transition:all 0.4s ease-in;
+    }
+    .beerimg1 { width:100%; height:450px; background:url(../imgs/dt-ale1.jpg) no-repeat center; }
+    .beerimg2 { width:100%; height:450px; background:url(../imgs/dt-ale2.png) no-repeat center; }
+    .beerimg3 { width:100%; height:450px; background:url(../imgs/dt-ale3.png) no-repeat center; } 
+    .beerimg4 { width:100%; height:450px; background:url(../imgs/dt-ale4.png) no-repeat center; }
+    .beerimg5 { width:100%; height:450px; background:url(../imgs/dt-ale5.png) no-repeat center; }
+    .beerimg6 { width:100%; height:450px; background:url(../imgs/dt-ale6.png) no-repeat center; }
+    .beerimg7 { width:100%; height:450px; background:url(../imgs/dt-lager1.png) no-repeat center; }
+    .beerimg8 { width:100%; height:450px; background:url(../imgs/dt-lager2.png) no-repeat center; }
+    .beerimg9 { width:100%; height:450px; background:url(../imgs/dt-lager3.png) no-repeat center; }
+    .beerimg10 { width:100%; height:450px; background:url(../imgs/dt-lager4.png) no-repeat center; }
+    .beerimg11 { width:100%; height:450px; background:url(../imgs/dt-lager5.png) no-repeat center; }
+    .beerimg12 { width:100%; height:450px; background:url(../imgs/dt-lager6.png) no-repeat center; }
+    
+        /*///// hover /////*/
+    .beerbt:hover { width:140px; height:40px; background:#ffb400; }
+}
+
+
+
+@media screen and (max-width:767px) {
+    /* ///// bnner ///// */
+    .bnfhd-txt { display:none; }
+    .bn2 { position:relative; width:100%; height:400px; margin:0 auto; }
+    .bn2 h2 {
+        width:230px; position:absolute; left:20%; top:35%; 
+        font-family:const; font-size:70px; color:#fff; text-transform:capitalize;
+    }
+    .bn2 h2 { color:#ffb400; }
+    .bn2 h2:last-child { margin-top:45px; color: #fff; }
+    .bnblack { width:100%; height:100%; background: rgba(0, 0, 0, 0.65); }
+    .bn2:hover .bnblack { background: rgba(0, 0, 0, 0.3); }
+    .bn2:hover h2 { opacity: 0.1;}
+
+
+
+    /* ///// 맥주 제조방식 ///// */ 
+    section { width:100%; margin:0 auto; }
+    .bm { margin-top:85px; }
+    .bm h3{ 
+        width:292px; margin:0 auto; padding-bottom:20px;
+        font-size:32px; color:#000; border-bottom: 1px solid #b4b4b4; text-align:center;
+    }
+    .bm h4 { 
+        margin:0 auto; padding:20px 0 15px 0; font-family: 'Noto Sans KR', sans-serif; 
+        font-size:20px; color:#636363; text-align:center;
+    }
+    .beerbox, .fhd-txt, .hd-txt {display:none;}
+    .bm p, .bm p.bm-txt { width:100%; font-size:14px; color:#636363; text-align:center; }
+    .bm span { color:#ffb400; }
+    .bm span.purple { color:#821491; }
+
+    article.tb { display:none; }
+    article.sm h5 { 
+        margin-top:40px; font-family: 'Noto Sans KR', sans-serif;  
+        font-size:20px; color:#636363; text-align:center; 
+    }
+    article.sm h5 span { color:#821491; }
+    
+    label { 
+        display:block;
+        width:100%; margin:0 auto;
+        text-align: center; 
+        cursor: pointer;
+    }
+    label::after { 
+        content:"";
+        position:absolute; right:20px; top:20px;
+        width:14px; height:9px; background:url(../imgs/arrow_down.png);
+    }
+    label i { 
+        color:#b4b4b4;  font-size:30px; 
+        transition:all 0.3s ease-in;
+    }
+    input { display:none; }
+
+    /*///// input:checked /////*/
+    .tbcontainer { width:60%; margin:25px auto; }
+    /*===== Accordion menu =====*/
+    label { 
+        display:block; position:relative; 
+        height:45px; 
+        font-size:16px; color:#fff; line-height:45px; text-align: center;
+        text-transform:uppercase; text-shadow:1px 1px 1px #f4f4f4;
+        background:linear-gradient(to bottom, #821491, rgba(130, 20, 145, 0.7));
+        box-shadow:0 0 0 1px rgba(155,155,155,0.3) inset,
+            0 2px 2px rgba(0,0,0,0.2);
+        cursor:pointer; transition:all 0.3s ease-in; 
+    }
+    label span { color:#ffb400; }
+    label:hover { background:rgba(130, 20, 145, 0.5); }
+    label:hover::after { 
+        content:"";
+        position:absolute; right:20px; top:20px;
+        width:14px; height:9px; margin-left:20px; background:url(../imgs/arrow_down.png);
+    }
+    /*===== Accordion contents =====*/
+    .ac { 
+        height:0;
+        background:rgba(255,255,255,0.5);  overflow:hidden;
+        box-shadow:0 0 0 1px rgba(155,155,155,0.6) inset;
+        transition:all 0.4s ease-out 0.2s; 
+    }
+    .labelImg { width:100%; height:300px; background:url(../imgs/article1.jpg) no-repeat; background-size:100% 300px; border-bottom:1px solid #333; }
+    .labelImg-2 { width:100%; height:300px; background:url(../imgs/article2.jpg) no-repeat; background-size:100% 300px; border-bottom:1px solid #333; }
+    .labelImg-3 { width:100%; height:300px; background:url(../imgs/article3.jpg) no-repeat; background-size:100% 300px; border-bottom:1px solid #333; }
+    .labelp { 
+        width:100%; padding:20px;
+        background:#e7e7e7; color:#000; text-align: justify; 
+        
+    }
+    .labelp span { color: #821491;}
+    .labelp li { width:100%; margin-bottom:5px; text-align: center; color:#821491; }
+    .labelp p { width:100%; text-align: center; }
+    .content-1 .labelp ul:nth-child(2) { margin-top:20px; }
+    .content-2 .labelp ul:nth-child(2), .content-2 .labelp ul:nth-child(3) { margin-top:10px; }
+
+    
+    
+    /*===== input:checked ===== */
+    /* + 인접선택자 */
+    input:checked + label { 
+        color:#fff; background:rgba(130, 20, 145, 1);
+        box-shadow:0 0 0 5px rgba(155,155,155,0.1) inset,
+            0 2px 2px rgba(0,0,0,0.2);
+    }
+    input:checked + label::after { background:url(../imgs/arrow_up.png); }
+    /* 인접선택자(한칸 떨어짐) */
+    input:checked ~ .ac { 
+        background:rgba(255,255,255,0.75);
+        box-shadow:0 0 0 5px rgba(155,155,155,0.2) inset;
+    }
+    input#ac-1:checked ~ .content-1 { height:100%; }
+    input#ac-2:checked ~ .content-2 { height:100%; }
+    input#ac-3:checked ~ .content-3 { height:100%; }
+
+
+
+    /* ///// 맥주의 종류 ///// */
+    .container, .container2 { width:310px; height:550px; margin:40px auto; }
+    .container2 { margin-bottom:80px; }
+    .container h4, .container2 h4 { 
+        width:100%; padding-bottom:30px; font-size:30px; text-align:center; text-transform:capitalize; 
+    }
+    .beerbt { 
+        width:140px; height:40px; margin:0 auto; text-align: center; line-height:35px;
+        border:3px solid #ffb400; border-radius:20px;
+        transition:all 0.4s ease-in;
+    }
+    .beerimg1 { width:100%; height:450px; background:url(../imgs/dt-ale1.jpg) no-repeat center; }
+    .beerimg2 { width:100%; height:450px; background:url(../imgs/dt-ale2.png) no-repeat center; }
+    .beerimg3 { width:100%; height:450px; background:url(../imgs/dt-ale3.png) no-repeat center; } 
+    .beerimg4 { width:100%; height:450px; background:url(../imgs/dt-ale4.png) no-repeat center; }
+    .beerimg5 { width:100%; height:450px; background:url(../imgs/dt-ale5.png) no-repeat center; }
+    .beerimg6 { width:100%; height:450px; background:url(../imgs/dt-ale6.png) no-repeat center; }
+    .beerimg7 { width:100%; height:450px; background:url(../imgs/dt-lager1.png) no-repeat center; }
+    .beerimg8 { width:100%; height:450px; background:url(../imgs/dt-lager2.png) no-repeat center; }
+    .beerimg9 { width:100%; height:450px; background:url(../imgs/dt-lager3.png) no-repeat center; }
+    .beerimg10 { width:100%; height:450px; background:url(../imgs/dt-lager4.png) no-repeat center; }
+    .beerimg11 { width:100%; height:450px; background:url(../imgs/dt-lager5.png) no-repeat center; }
+    .beerimg12 { width:100%; height:450px; background:url(../imgs/dt-lager6.png) no-repeat center; }
+    
+        /*///// hover /////*/
+    .beerbt:hover { width:140px; height:40px; background:#ffb400; }
+}
