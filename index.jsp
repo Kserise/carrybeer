@@ -10,7 +10,7 @@
 <link rel="shortcut icon" href="./imgs/fv_beer.ico">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
 <link rel="stylesheet" href="./css/reset.css">
-<link rel="stylesheet" href="./css/common.css">
+<!--  <link rel="stylesheet" href="./css/common.css"> -->
 <link rel="stylesheet" href="./css/main.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/script.js"></script>

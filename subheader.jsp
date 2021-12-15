@@ -36,30 +36,41 @@
                 <%} %>
             </ul>
         </nav>
-        <div id="navbar">
-            <a href="#" id="close"><i class="fas fa-times"></i></a>
-            <ul id="mainmenu">
-                <li><a href="#">beer story</a>
-                    <ul class="submenu">
-                        <li><a href="sub01.jsp">맥주의 역사</a></li>
-                        <li><a href="sub01.jsp">맥주의 효능</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">beer recipe</a>
-                    <ul class="submenu">
-                        <li><a href="sub02.jsp">맥주 제조방식</a></li>
-                        <li><a href="sub02.jsp">맥주의 종류</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">beer world</a>
-                    <ul class="submenu">
-                        <li><a href="sub03.jsp">나라별 대표맥주</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <div class="navimg"></div>
-        </div>
+        <div id="navbar"></div>
         <a href="#" id="black_cover"></a>
     </header>
+    <aside class="sidenav">
+        <ul class="mainmenu">
+            <li>
+                <a href="#">
+                    <span class="s-icon"><i class="fas fa-home"></i></span>
+                    <span class="title">Beer Story</span>
+                </a>
+                <ul class="submenu">
+                    <li><a href="sub01.jsp">맥주의 역사</a></li>
+                    <li><a href="sub01.jsp">맥주의 효능</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="s-icon"><i class="fas fa-user"></i></span>
+                    <span class="title">Beer Recipe</span>
+                </a>
+                <ul class="submenu">
+                    <li><a href="sub02.jsp">맥주 제조방식</a></li>
+                    <li><a href="sub02.jsp">맥주의 종류</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">
+                    <span class="s-icon"><i class="fas fa-question-circle"></i></span>
+                    <span class="title">Beer World</span>
+                </a>
+                <ul class="submenu">
+                    <li><a href="sub03.jsp">나라별 대표맥주</a></li>
+                </ul>
+            </li>
+        </ul>
+    </aside>
    <%@ include file="navigation.jsp" %>
 
