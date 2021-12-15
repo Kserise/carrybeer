@@ -14,6 +14,10 @@ $(document).ready(function( ) {
                 'background':'rgba(55,0,65,0.75)',
                 'box-shadow':'1px 1px 3px rgba(0,0,0,0.15)'
             });
+			$('.submenu').css({
+                'background':'rgba(55,0,65,0.75)',
+                'box-shadow':'1px 1px 3px rgba(0,0,0,0.15)'
+			});
         }else { 
             $('header').css({
                 'background':'none',
@@ -23,6 +27,10 @@ $(document).ready(function( ) {
                 'background':'none',
                 'box-shadow':'1px 1px 3px rgba(0,0,0,0.15)'
             });
+			$('.submenu').css({
+                'background':'none',
+                'box-shadow':'1px 1px 3px rgba(0,0,0,0.15)'
+			});
         }
     });
 	const sidenav = document.querySelector(".sidenav");

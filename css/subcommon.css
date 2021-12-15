@@ -6,7 +6,7 @@ span.ftdel { color:#fff; }
 .fticon a:hover { color:rgb(255,180,0); }
 .sidenav span { color:#fff; }
 .sidenav { background:rgba(55,0,65,0.8); z-index:999; }
-.submenu li { background:rgba(55,0,65,0.8); }
+.submenu { background:rgba(55,0,65,0.8); }
 header { transition:0.5s; }
 @media screen and (min-width:1450px) {
 	/*/////header/////*/
