@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <body>
+	<link rel="stylesheet" href="./css/navigation.css">
 	<header>
 		<nav>
             <a href="#" id="open"><i class="fas fa-bars"></i></a>
@@ -60,4 +61,5 @@
         </div>
         <a href="#" id="black_cover"></a>
     </header>
+   <%@ include file="navigation.jsp" %>
 
