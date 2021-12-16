@@ -50,42 +50,73 @@
 </script>
 </head>
 <body>
-<div class="container">
-	<h2>맥주 등록 페이지</h2>
-	<form action="beerInsertOk.jsp" name="beerFrm" method="post" enctype="multipart/form-data">
-		<ul class="bs-input">
-			<li><input class="form-control" type="text" name="brname" placeholder="맥주명"  autofocus></li>
-			<li><input class="form-control" type="text" name="made" placeholder="생산국가" ></li>
-			<li><input class="form-control" type="text" name="alcol" placeholder="도수" ></li>
-			<li><input class="form-control" type="text" name="madearea" placeholder="제조사" ></li>
-			<li><input class="form-control" type="text" name="vari" placeholder="맥주종류" ></li>
-			<li><input class="form-control" type="text" name="birth" placeholder="제조년월" ></li>
-			<li>
-	            <div class="input-group taste">
-	               <span>씁쓸함</span>
-	               <input type="range" name="flavor" class="form-range rangebar"  value="2" min="0" max="4" id="customRange2">
-	               <span>달콤함</span>
-	            </div>
-	         </li>
-			<li>
-				<div class="input-group">
-					<label class="input-group-text" for="inputGroupSelect01">맥주 향</label>
-					<select name="smell" class="form-select" id="inputGroupSelect01">
-							<option value="선택안함" selected>==== 선택하세요 ====</option>
-							<option value="라벤더향">라벤더향</option>
-							<option value="민트향">민트향</option>
-							<option value="박하향">박하향</option>
-							<option value="라거향">라거향</option>
-					</select>
-				</div>
-			</li>
-			<li><input class="form-control" type="file" name="filename" ></li>
-			<li><input class="form-control" type="text" name="search" placeholder="해당 맥주의 검색키워드들을 적어주세요." ></li>
-		</ul>
-	</form>
-	
-	<button class="btn btn-primary" onclick="add()">등록하기</button>
-	<button class="btn btn-danger" onclick="javascript:location.href='../member/myPage.jsp'">돌아가기</button>
-</div>
+
+    <div class="background">
+		<div></div>
+	</div>
+
+	<div class="container">
+		<aside>
+			<nav>
+				<ul>
+					<li><a href="../member/myPage.jsp">마이페이지</a></li>
+					<li><a href="../member/upDate.jsp">개인정보수정</a></li>
+					<li class="select"><a href="beerInsert.jsp">맥주정보 등록</a></li>
+				</ul>
+			</nav>
+		</aside>
+		<section>
+			<form action="beerInsertOk.jsp" name="beerFrm" method="post" enctype="multipart/form-data">
+				<ul>
+					<li>
+						<h3>맥주명, 제조사 등</h3>
+						<input class="form-control" type="text" name="brname" placeholder="맥주명"  autofocus>
+						<input class="form-control" type="text" name="made" placeholder="생산국가" >
+						<input class="form-control" type="text" name="madearea" placeholder="제조사" >
+						<input class="form-control" type="text" name="birth" placeholder="제조년월" >
+					</li>
+					<li>
+						<h3>맥주 종류, 도수</h3>
+						<input class="form-control" type="text" name="vari" placeholder="맥주종류" >
+						<input class="form-control" type="text" name="alcol" placeholder="도수" >
+					</li>
+					<li>
+						<h3>맛</h3>
+			            <div class="input-group taste">
+			               <span>씁쓸함</span>
+			               <input type="range" name="flavor" class="form-range rangebar"  value="2" min="0" max="4" id="customRange2">
+			               <span>달콤함</span>
+			            </div>
+					</li>
+					<li>
+						<h3>향</h3>
+						<div class="input-group">
+							<label class="input-group-text" for="inputGroupSelect01">맥주 향</label>
+							<select name="smell" class="form-select" id="inputGroupSelect01">
+									<option value="선택안함" selected>==== 선택하세요 ====</option>
+									<option value="라벤더향">라벤더향</option>
+									<option value="민트향">민트향</option>
+									<option value="박하향">박하향</option>
+									<option value="라거향">라거향</option>
+							</select>
+						</div>
+					</li>
+					<li>
+						<h3>첨부파일(맥주사진)</h3>
+						<input class="form-control" type="file" name="filename" >
+					</li>
+					<li>
+						<h3>검색 키워드</h3>
+						<input class="form-control" type="text" name="search" placeholder="해당 맥주의 검색키워드들을 적어주세요." >
+					</li>
+				</ul>
+			</form>
+		</section>
+		<div class = "upbtncon">
+			<button class="btn btn-primary" onclick="add()">등록하기</button>
+			<button class="btn btn-danger" onclick="javascript:location.href='../member/myPage.jsp'">돌아가기</button>
+		</div>
+	</div>
+	<script src="../js/boot.js"></script>
 </body>
 </html>

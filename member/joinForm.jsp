@@ -8,7 +8,7 @@
 <title>캐리비어ㅣ회원가입</title>
 <link rel="stylesheet" href="../css/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
-<link rel="stylesheet" href="../css/boot.css">
+<link rel="stylesheet" href="../css/boot-re.css">
 <link rel="shortcut icon" href="../imgs/fv_beer.ico">
 </head>
 <script src="js/jquery-1.12.4.min.js"></script>

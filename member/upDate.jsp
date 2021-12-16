@@ -49,35 +49,32 @@
 </script>
 </head>
 <body>
+    <div class="background">
+		<div></div>
+	</div>
+
 	<div class="container">
-		<h2>개인정보수정</h2>
-		<form action="upDateOk.jsp" method="post" name="upFrm" enctype="multipart/form-data">
-			<ul class="bs-input">
-				<li>
-					<div class="input-group">
-						<span class="input-group-text"><i class="bi bi-person-circle"></i>&nbsp; 아이디</span>
-						<input id="id" type="text" name="mem_id" value="<%=cb.getMem_id() %>" readonly class="form-control">
-					</div>
-				</li>
-				<li>
-					<div class="input-group">
-						<span class="input-group-text"><i class="bi bi-person-circle"></i>&nbsp; 이름</span>
-						<input type="text" name="name" value="<%=cb.getName() %>">
-					</div>
-				</li>
-				<li>
-					<div class="input-group">
-						<span class="input-group-text"><i class="bi bi-key-fill"></i>&nbsp; 비밀번호</span>
-						<input type="password" name="pwd" value="<%=cb.getPwd() %>" >
-					</div>
-				</li>
-				<li>
-					<div class="input-group">
-						<span class="input-group-text"><i class="bi bi-calendar2-day"></i>&nbsp; 생일</span>
-						<input type="text" name="birth" value="<%=cb.getBirth( )%>" >
-					</div>
-				</li>
-				<li>
+		<aside>
+			<nav>
+				<ul>
+					<li><a href="myPage.jsp">마이페이지</a></li>
+					<li class="select"><a href="upDate.jsp">개인정보수정</a></li>
+					<%if(cb.getAdmin() == 1){ %>
+					<li><a href="../beerinfor/beerInsert.jsp">맥주정보 등록</a></li>
+					<%} %>
+				</ul>
+			</nav>
+		</aside>
+		<section>
+			<form action="upDateOk.jsp" method="post" name="upFrm" enctype="multipart/form-data">
+				<ul>
+					<li>
+						<h3>비밀번호 변경</h3>
+							<input id="id" type="text" name="mem_id" value="<%=cb.getMem_id() %>" readonly class="form-control">
+							<input type="password" name="pwd" value="<%=cb.getPwd() %>"  class="form-control">
+					</li>
+					<li>
+						<h3>첨부파일(사진)</h3>
 				<%
 					if(cb.getFilename() != ""){
 				%>
@@ -96,16 +93,24 @@
 				<%
 				}
 				%>
-				</li>
-			</ul>
-		</form>
+					</li>
+					<li>
+						<h3>이름</h3>
+						<input type="text" name="name" class="form-control" placeholder="<%=cb.getName() %>">
+					</li>
+					<li>
+						<h3>생일</h3>
+						<input type="text" name="birth" value="<%=cb.getBirth( )%>"  class="form-control">
+					</li>
+				</ul>
+			</form>
+		</section>
 		<div class = "upbtncon">
-			<div class="btn-group">
-				<button class="btn btn-danger" onclick="javascript:location.href='myPage.jsp'">돌아가기</button>
-				<button class="btn btn-primary" onclick="update()">수정</button>
-			</div>
+			<button class="btn btn-danger" onclick="javascript:location.href='myPage.jsp'">돌아가기</button>
+			<button class="btn btn-primary" onclick="update()">수정</button>
 			<button class="btn btn-secondary" onclick="deleteid( )">회원 탈퇴</button>
 		</div>
 	</div>
+	<script src="../js/boot.js"></script>
 </body>
 </html>

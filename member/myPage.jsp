@@ -34,52 +34,61 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
 <link rel="stylesheet" href="../css/boot.css">
 </head>
-<style>
-
-</style>
 <body>
+    <div class="background">
+		<div></div>
+	</div>
+
 	<div class="container">
-		<h2>마이페이지</h2>
-		<ul class="bs-input">
-			<li>
-				<div class="input-group">
-					<span class="input-group-text"><i class="bi bi-person-circle"></i>&nbsp; 아이디</span>
-					<input type="text" value="<%=mem.getMem_id() %>" readonly class="form-control">
-				</div>
-			</li>
-			<li>
-				<div class="input-group">
-					<span class="input-group-text"><i class="bi bi-person-circle"></i>&nbsp; 이름</span>
-					<input type="text" value="<%=mem.getName() %>" readonly class="form-control">
-				</div>
-			</li>
-			<li>
-				<div class="input-group">
-					<span class="input-group-text"><i class="bi bi-calendar2-day"></i>&nbsp; 생일</span>
-					<input type="text" value="<%=mem.getBirth() %>" readonly class="form-control">
-				</div>
-			</li>
-			<li>
-			<%
-				if(filename != ""){
-			%>
-				<div class="input-group">
-					<span class="input-group-text"><i class="bi bi-card-image"></i>&nbsp; 파일명</span>
-					<input type="text" value="<%=filename %>" readonly class="form-control">
-				</div>
-				<img class="rounded mx-auto d-block img-thumbnail" src="../upload/<%=filename %>" alt="증명사진"/>
-			<%
-				}else {
-			%>
-				<div class="input-group">
-					<span class="input-group-text"><i class="bi bi-card-image"></i>&nbsp; 파일명</span>
-					<input type="text" value="첨부 된 파일이 없습니다." readonly class="form-control">
-				</div>
-				<%
-				}
-				%>
-			</li>
-			<li>
+		<aside>
+			<nav>
+				<ul>
+					<li class="select"><a href="myPage.jsp">마이페이지</a></li>
+					<li><a href="upDate.jsp">개인정보수정</a></li>
+					<%if(admin == 1){ %>
+					<li><a href="../beerinfor/beerInsert.jsp">맥주정보 등록</a></li>
+					<%} %>
+				</ul>
+			</nav>
+		</aside>
+		<section>
+				<ul>
+					<li>
+						<h3>아이디</h3>
+						<input type="text" value="<%=mem.getMem_id() %>" readonly class="form-control">
+					</li>
+					<li>
+						<h3>이름</h3>
+						<input type="text" value="<%=mem.getName() %>" readonly class="form-control">
+					</li>
+					<li>
+						<h3>첨부파일(사진)</h3>
+					<%
+						if(filename != ""){
+					%>
+						<div class="input-group">
+							<span class="input-group-text"><i class="bi bi-card-image"></i>&nbsp; 파일명</span>
+							<input type="text" value="<%=filename %>" readonly class="form-control">
+						</div>
+						<img class="rounded mx-auto d-block img-thumbnail" src="../upload/<%=filename %>" alt="증명사진"/>
+					<%
+						}else {
+					%>
+						<div class="input-group">
+							<span class="input-group-text"><i class="bi bi-card-image"></i>&nbsp; 파일명</span>
+							<input type="text" value="첨부 된 파일이 없습니다." readonly class="form-control">
+						</div>
+						<%
+						}
+						%>
+					</li>
+					<li>
+						<h3>생일</h3>
+						<input type="text" value="<%=mem.getBirth() %>" readonly class="form-control">
+					</li>
+				</ul>
+		</section>
+		<div class = "upbtncon">
 	            <% if(admin == 1){ %>
 	            <button class="btn btn-primary" onclick="javascript:location.href='../beerinfor/beerInsert.jsp'">맥주 등록</button>
 	            <button class="btn btn-danger" onclick="javascript:location.href='../sub03.jsp'">맥주 수정</button>
@@ -89,10 +98,9 @@
 	            <button class="btn btn-secondary" onclick="location.href='../index.jsp'">돌아가기</button>
 	            <button class="btn btn-warning" onclick="location.href='../MyBeer.jsp'">나의 맥주</button>
 	            <%} %>
-			</li>
-		</ul>
-	</div>
-</body>
+         </div>
+    </div>
+	<script src="../js/boot.js"></script>
 <%
 	}else {
 %>
@@ -103,4 +111,5 @@
 <%
 	}
 %>
+</body>
 </html>
